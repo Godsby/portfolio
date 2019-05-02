@@ -23,6 +23,16 @@
       /* opacity: 0.6; */
     }
 
+    .sidenav {
+      padding-top: 20px;
+      width: 70%
+    }
+
+    h3 {
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
+
     @media screen and (max-width: 670px) {
       header {
         min-height: 500px;
@@ -42,6 +52,22 @@
     .tabs .tab a:focus.active {
       background: transparent;
     }
+
+    .contact, .social {
+      display: flex;
+      align-items: center;
+      padding-left: 20px;
+      padding-bottom: 10px
+    }
+
+    .material-icons,.social>i {
+      padding-right: 15px;
+    }
+
+    .social.fab {
+      padding-top: 0px;
+    }
+
   </style>
 </head>
 
@@ -53,7 +79,7 @@
       <div class="container">
         <a href="#" class="brand-logo indigo-text">callMeLeo</a>
         <a href="#" class="sidenav-trigger" data-target="mobile-menu">
-          <i class="material-icons">menu</i>
+          <i class="material-icons indigo-text">menu</i>
         </a>
         <ul class="right hide-on-med-and-down">
           <li><a href="#portfolios" class='indigo-text'>Portfolios</a></li>
@@ -72,10 +98,10 @@
               <i class="fab fa-twitter"></i>
             </a></li>
         </ul>
-        <ul class="sidenav lighten-2" id="mobile-menu">
-          <li><a href="#" class='indigo-text'>Portfolios</a></li>
-          <li><a href="#" class='indigo-text'>Skills</a></li>
-          <li><a href="#" class='indigo-text'>Contact</a></li>
+        <ul class="sidenav grey lighten-4" id="mobile-menu">
+          <li><a href="#portfolios" class='indigo-text'>Portfolios</a></li>
+          <li><a href="#services" class='indigo-text'>Skills</a></li>
+          <li><a href="#aboutme" class='indigo-text'>About me</a></li>
         </ul>
       </div>
     </nav>
@@ -202,26 +228,25 @@
   <footer class="page-footer indigo darken-4">
     <div class="container">
       <div class="row">
-        <div class="col l6 s12">
+        <div class="col l12 s12">
           <h3>Get in Touch</h3>
-          <div class="col s12 l5 offset-l2" style="margin-top: 20px">
-              <div class="email">
-                <i class="material-icons">contact_mail</i>
-                <span>huandan.lu@gmail.com</span>
-                
-              </div>
-              <div class="phone">
-                <i class="material-icons">contact_phone</i>
-                <h6>(312) 493 - 9078</h6>
-              </div>
-              <div class="social">
-                <i class="fab fa-linkedin small"></i>&nbsp;&nbsp;
-                <a class="center" href="https://www.linkedin.com/in/followingdreams/">LinkedIn</a>
-              </div>
-              <div class="social">
-                <i class="fab fa-github small"></i>&nbsp;&nbsp;
-                <a class="center" href="https://github.com/Godsby">Github</a>
-              </div>
+          <div class="col s12 l5">
+            <div class="contact">
+              <i class="material-icons small">contact_mail</i>huandan.lu@gmail.com
+            </div>
+            <div class="contact">
+              <i class="material-icons small">contact_phone</i>(312) 493 - 9078
+            </div>
+          </div>
+          <div class="col s12 l5 offset-l2">
+            <div class="social">
+              <i class="fab fa-linkedin small"></i>
+              <a class="center" href="https://www.linkedin.com/in/followingdreams/">LinkedIn</a>
+            </div>
+            <div class="social">
+              <i class="fab fa-github small"></i>
+              <a class="center" href="https://github.com/Godsby">Github</a>
+            </div>
           </div>
         </div>
    
