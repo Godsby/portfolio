@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <title>Huandan (Leo) Lu </title>
+  <style>
+    header {
+      background: url(img/NYC_night.jpg);
+      background-size: cover;
+      background-position: center;
+      min-height: 1000px;
+      /* opacity: 0.6; */
+    }
+
+    @media screen and (max-width: 670px) {
+      header {
+        min-height: 500px;
+      }
+    }
+
+    .section {
+      padding-top: 4vw;
+      padding-bottom: 4vw;
+    }
+
+    .tabs .indicator {
+      background-color: #1a237e;
+    }
+
+    .tabs .tab a:focus,
+    .tabs .tab a:focus.active {
+      background: transparent;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- navbar -->
+  <header>
+    <nav class="nav-wrapper white">
+      <div class="container">
+        <a href="#" class="brand-logo indigo-text">callMeLeo</a>
+        <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+          <i class="material-icons">menu</i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#portfolios" class='indigo-text'>Portfolios</a></li>
+          <li><a href="#services" class='indigo-text'>Skills</a></li>
+          <li><a href="#aboutme" class='indigo-text'>About me</a></li>
+          <li><a href="https://www.linkedin.com/in/followingdreams/" class="tooltipped btn-floating btn-small indigo darken-4" data-position="bottom"
+              data-tooltip="LinkedIn">
+              <i class="fab fa-linkedin"></i>
+            </a></li>
+          <li><a href="https://github.com/Godsby" class="tooltipped btn-floating btn-small indigo darken-4" data-position="bottom"
+              data-tooltip="Github">
+              <i class="fab fa-github"></i>
+            </a></li>
+          <li><a href="https://twitter.com/dzpvr0" class="tooltipped btn-floating btn-small indigo darken-4" data-position="bottom"
+              data-tooltip="Twitter">
+              <i class="fab fa-twitter"></i>
+            </a></li>
+        </ul>
+        <ul class="sidenav lighten-2" id="mobile-menu">
+          <li><a href="#" class='indigo-text'>Portfolios</a></li>
+          <li><a href="#" class='indigo-text'>Skills</a></li>
+          <li><a href="#" class='indigo-text'>Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- photo / grid -->
+  <section class="container section scrollspy" id="portfolios">
+    <div class="row">
+      <div class="col s12 l4">
+        <img src="img/EnvizoLogo2.svg" alt="" class="responsive-img materialboxed">
+      </div>
+      <div class="col s12 l7 offset-l1">
+        <h3 class="indigo-text text-darken-4">Envizo</h3>
+        <h5>An app to address Environmental issues as a community in a visual way. <br/><br/>Environmental + Visualization = Envizo.</h5>
+        <h5>Tech Stack:</h5>
+          <h6>Frontend: React + Redux</h6>
+          <h6>Backend: PostgreSQL + Express</h6>
+          <h6>Main Library: D3.js</h6>
+          <h6>Source of APIs: NYC Open Data</h6>
+      </div>
+    </div><hr/>
+    <div class="row">
+      <div class="col s12 l4 offset-l1 push-l7">
+        <img src="img/relieve_logo.png" alt="" class="responsive-img materialboxed">
+      </div>
+      <div class="col s12 l6 offset-l1 pull-l5 left-align">
+        <h3 class="indigo-text text-darken-4">RelieveMe</h3>
+        <h5>An app for taxi drivers who are on the go who need to “go”! This app was designed to locate the all Taxi Relief stands
+        around your current location or you can find one in any borough you choose! Once you find a parking space, drivers are
+        able to stay in that space for up to 1-hour to take a nap, run an errand or “go”!</h5>
+        <h5>Tech Stack:</h5>
+        <h6>Frontend: React</h6>
+        <h6>Backend: PostgreSQL + Express</h6>
+        <h6>Main Library: react-geocode </h6>
+        <h6>Source of APIs: Google Maps JavaScript API</h6>
+      </div>
+    </div><hr/><br/>
+    <div class="row">
+      <div class="col s12 l4">
+        <img src="img/Unote-logo.png" alt="" class="responsive-img materialboxed">
+      </div>
+      <div class="col s12 l6 offset-l1">
+        <h3 class="indigo-text text-darken-4">Unote</h3>
+        <h5>An app that imitates Evernote.</h5>
+        <h5>Tech Stack:</h5>
+        <h6>Frontend: React + Redux</h6>
+        <h6>Backend: PostgreSQL + Express</h6>
+        <h6>Main Library: Quill.js and materializecss </h6>
+      </div>
+    </div>
+  </section>
+
+  <!-- parallax -->
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="img/mac3.jpg" alt="" class="responsive-img">
+    </div>
+  </div>
+
+  <!-- services / tabs -->
+  <section class="section container scrollspy" id="services">
+    <div class="row">
+      <div class="col s12 l4">
+        <h2 class="indigo-text text-darken-4">Skills</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec,
+          tincidunt orci.</p>
+        <p>Mauris dolor augue, vulputate in pharetra ac, facilisis nec libero. Fusce condimentum gravida urna, vitae
+          scelerisque erat ornare nec.</p>
+      </div>
+      <div class="col s12 l6 offset-l2">
+        <!-- tabs -->
+        <ul class="tabs">
+          <li class="tab col s6">
+            <a href="#photography" class="active indigo-text text-darken-4">Web Developing</a>
+          </li>
+          <li class="tab col s6">
+            <a href="#editing" class="indigo-text text-darken-4">Data Analysis</a>
+          </li>
+        </ul>
+        <div id="photography" class="col s12">
+          <p class="flow-text indigo-text text-darken-4">Web Developing</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec,
+            tincidunt orci.</p>
+          <p>Mauris dolor augue, vulputate in pharetra ac, facilisis nec libero. Fusce condimentum gravida urna, vitae
+            scelerisque erat ornare nec.</p>
+        </div>
+        <div id="editing" class="col s12">
+          <p class="flow-text indigo-text text-darken-4">Data Analysis</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec,
+            tincidunt orci.</p>
+          <p>Mauris dolor augue, vulputate in pharetra ac, facilisis nec libero. Fusce condimentum gravida urna, vitae
+            scelerisque erat ornare nec.</p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- parallax -->
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="img/esb.jpg" alt="" class="responsive-img">
+    </div>
+  </div>
+
+  <!-- contact form -->
+  <section class="section container scrollspy" id="aboutme">
+    <div class="row">
+      <div class="col s12 l5">
+        <h3 class="indigo-text text-darken-4">About Me</h3>
+        <p>I started my career in China as a mechanical engineer in the auto industry. After I graduated from my MBA program in
+          Chicago, I founded a startup to help international visitors find drivers who speak their native language, all from a
+          mobile app. In those days, I worked closely with UI/UX designers and developers and learned enough from them to
+          develop
+          my company’s website by myself. The more I learn, the more I am excited to be a developer..</p>
+        <p>Thanks Pursuit for the 10-month program. Now I'm a passinate web developer. I look forward to helping you build your
+          dream apps!</p>
+      </div>
+     
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer class="page-footer indigo darken-4">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h3>Get in Touch</h3>
+          <div class="col s12 l5 offset-l2" style="margin-top: 20px">
+              <div class="email">
+                <i class="material-icons">contact_mail</i>
+                <span>huandan.lu@gmail.com</span>
+                
+              </div>
+              <div class="phone">
+                <i class="material-icons">contact_phone</i>
+                <h6>(312) 493 - 9078</h6>
+              </div>
+              <div class="social">
+                <i class="fab fa-linkedin small"></i>&nbsp;&nbsp;
+                <a class="center" href="https://www.linkedin.com/in/followingdreams/">LinkedIn</a>
+              </div>
+              <div class="social">
+                <i class="fab fa-github small"></i>&nbsp;&nbsp;
+                <a class="center" href="https://github.com/Godsby">Github</a>
+              </div>
+          </div>
+        </div>
+   
+      </div>
+    </div>
+    <div class="footer-copyright grey darken-4">
+      <div class="container center-align">&copy; 2019 Huandan (Leo) Lu</div>
+    </div>
+  </footer>
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.sidenav').sidenav();
+      $('.materialboxed').materialbox();
+      $('.parallax').parallax();
+      $('.tabs').tabs();
+      $('.datepicker').datepicker({
+        disableWeekends: true,
+        yearRange: 1
+      });
+      $('.tooltipped').tooltip();
+      $('.scrollspy').scrollSpy();
+    });
+  </script>
+</body>
+
+</html>
